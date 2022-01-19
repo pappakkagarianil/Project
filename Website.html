@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<title>Website</title>
+
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src=ambulance.js></script>
+</head>
+<BODY>
+<link rel=stylesheet  href=style.css>
+<marquee ><h2>welcome to Anil Health care center <h2></marquee>
+<hr>
+<div class=header id="myHeader">
+<div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn"><input type="text" placeholder="Search Here" id="myInput" onkeyup="filterFunction()"></button>
+  <div id="myDropdown" class="dropdown-content">
+   
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="#base">Base</a>
+  
+    <a href="product.html">our services</a>
+  </div>
+</div>
+ 
+
+<i class='fas fa-ambulance' style=font-size:24px;color:red;><h2>Anil Health care center </h2></i> 
+<pre style=font-size:18px; >The Trusted Provider of Medical Information since 1899
+The MSD Manuals are a comprehensive medical information source covering thousands of topics in all fields of medicine.
+ They are offered as a free public service to health care professionals and the general public</pre>
+</div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" id=mynav>
+  <a class="navbar-brand" href="website.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="product.html">services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">about us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+      </li>    
+    </ul>
+
+  </div>  
+</nav>
+
+<br>
+
+<img src=download.jpg class=center>
+ 
+
+  <h1>Affordable plans with valuable benefits:<h1>
+   <pre>You can count on Health Net to help you get the care you need.<hr>
+
+ Choose from a wide range of plans offering valuable benefits:  </pre>
+   <ul type=disc>
+   <li>Medical coverage, including primary care physician visits</li>
+   <li>Preventive care and wellness programs</li>
+   <li>24/7 Nurse Advice Line</li>
+   <li>Telehealth services</li>
+   <li>Adult vision care and dental plans are also available</li>
+    </ul>
+ 
+<hr>
+
+ <div class="row">
+  <div class="column">
+    <h1 style=color:red;><u>Anil Department of Physiotherapy:</u></h1><br>
+    <p >Anil Hospitals are home to the world-class Physiotherapy
+       and Rehabilitation Department,
+       which offers a wide range of treatments and services to patients. 
+    Physiotherapy treatments are taken by patients to restore, maintain, 
+      and improve their mobility.
+     Physiotherapy helps people improve their overall health,
+  prevent and treat injuries, as well as physical rehabilitation. We have a highly skilled and council
+ registered team of physiotherapists, occupational therapists, 
+ registered prosthetist, and orthotist. We are dedicated to our aim of helping patients reach 
+    independent functioning and full recovery. </p>
+  </div>
+<div class="column">
+   <img src=doctor1.jpg  class="center1">
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+function myFunction1() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<br>
+<br>
+
+
+<div class=footer1>
+<p>© 2019 Anil Hospitals Enterprise Ltd. All Rights Reserved.</p>
+</div>
+
+</BODY>
+</HTML>
